@@ -1,0 +1,19 @@
+.header{
+  
+}
+.nav-bar{
+  display: flex;
+}
+.nav-bar>div{
+  padding: 10px;
+}
+/*
+.tab{
+  background: yellow;
+}
+.tab.extra{
+  background: blue;
+}*/
+#main-body{
+  display: flex;
+}

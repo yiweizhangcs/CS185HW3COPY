@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Demo</title>
+	<link rel="stylesheet" type="text/css" href="hw3teststyle.css">
+	<script src="hw3test.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body onload="addBtn()">
+	<div id="reuse-block">
+
+	</div>
+	<script type="text/javascript">
+		$("#reuse-block").load("reuse.html")
+	</script>
+
+	<div id="container" tabindex="0">
+		<div id="btn-bar">
+			<button class="btn" onclick="addBox()">Add box</button>
+			<button class="btn" id="rem">Remove box</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+			function addBox(){
+				const container = document.getElementById("container");
+				console.log(container);
+				var box = document.createElement("div");
+				box.id = "box";
+				console.log(box)
+				container.appendChild(box)
+			}
+	</script>
+</body>
+</html>
